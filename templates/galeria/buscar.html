@@ -44,6 +44,8 @@
                             {% else %}
                             <div class="imagem__texto">
                                 <p>Nenhuma imagem encontrada</p>
+                                <img src="{% static '/assets/imagens/galeria/not_found.png' %}" alt="imagem não encontrada">
+                                <a href="{% url 'index' %}">Voltar</a>
                             </div>
                             {% endif %}
                         </ul>
